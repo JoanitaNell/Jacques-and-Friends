@@ -42,9 +42,10 @@ public class UserWallet
     public Wallet Wallet { get; set; }
 }
 
-public class User69
+public class User
 {
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    public Guid UserID { get; set; }
+    public String Email { get; set; }
 }
 
 public class Wallet
@@ -65,7 +66,5 @@ public class Ledger
     public int ParentID { get; set; }
     public Wallet Wallet { get; set; }
 }
-    public Guid UserID { get; set; }
-    public String Email { get; set; }
-}
+    
 
