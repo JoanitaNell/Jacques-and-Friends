@@ -1,4 +1,6 @@
 using GradCoinFridayDemo;
+using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,11 +27,11 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 
-app.MapGet("/weatherforecast", () =>
+app.MapPost("/wallet/transfer", async (TransferDto transerDto, GradCoinFridayDemoDbContext _dbContext) =>
 {
-    
+   
 })
-.WithName("GetWeatherForecast");
+.WithName("TranserCoin");
 
 app.Run();
 
@@ -44,12 +46,14 @@ app.Run();
 
 public class User
 {
+    [Key]
     public Guid UserID { get; set; }
     public String Email { get; set; }
 }
 
 public class Wallet
 {
+    [Key]
     public Guid WalletID { get; set; }
     public int Balance { get; set; }
     public String WalletType { get; set; }
@@ -58,6 +62,7 @@ public class Wallet
 
 public class Ledger
 {
+    [Key]
     public int LedgerID { get; set; }
     public Guid WalletID { get; set; }
     public String TransactionAction { get; set; }
@@ -69,6 +74,8 @@ public class Ledger
 
 public class Transaction
 {
+    [Key]
+    public Guid TransactionID { get; set; }
     public DateTime DateTime { get; set; }
     public Guid SenderWalletID { get; set; }
     public Guid ReceiverWalletID { get; set; }
