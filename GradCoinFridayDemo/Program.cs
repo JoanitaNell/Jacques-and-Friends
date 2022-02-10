@@ -1,4 +1,5 @@
 using GradCoinFridayDemo;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,11 +26,21 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 
-app.MapGet("/weatherforecast", () =>
+
+
+app.MapGet("/wallet/{id}", async(Guid id, GradCoinFridayDemoDbContext _dbContext) =>
 {
-    
+    var ReturnWallet = await _dbContext.wallets.Where(x => x.WalletID == id).FirstOrDefaultAsync();
+    return ReturnWallet;    
+
 })
-.WithName("GetWeatherForecast");
+.WithName("GetWalletByID");
+
+app.MapGet("/ledger", async (GradCoinFridayDemoDbContext _dbContext) =>
+{
+    var ledgerEntries = await _dbContext.ledgers.ToListAsync();
+    return ledgerEntries;
+}).WithName("GetLedger");
 
 app.Run();
 
