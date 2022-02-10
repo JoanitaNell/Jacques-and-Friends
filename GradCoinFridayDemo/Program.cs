@@ -66,5 +66,13 @@ public class Ledger
     public int ParentID { get; set; }
     public Wallet Wallet { get; set; }
 }
+
+public class Transaction
+{
+    public DateTime DateTime { get; set; }
+    public Guid SenderWalletID { get; set; }
+    public Guid ReceiverWalletID { get; set; }
+    public Decimal Amount { get; set; }
+}
     
 
