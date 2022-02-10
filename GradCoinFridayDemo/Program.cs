@@ -1,9 +1,17 @@
+using GradCoinFridayDemo;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+IConfigurationRoot configuration = new ConfigurationBuilder()
+.SetBasePath(Directory.GetCurrentDirectory())
+.AddJsonFile("appsettings.json")
+.Build();
+var connectionString = configuration.GetConnectionString("Db_Connection");
+builder.Services.AddDbContext<GradCoinFridayDemoDbContext>(x => x.UseSqlServer(connectionString));
 
 var app = builder.Build();
 
@@ -33,14 +41,6 @@ app.Run();
 //Classes
 //---------------------
 
-public class UserWallet
-{
-    public Guid UserID { get; set; }
-    public Guid WalletID { get; set; }
-
-    public User User { get; set; }
-    public Wallet Wallet { get; set; }
-}
 
 public class User
 {
