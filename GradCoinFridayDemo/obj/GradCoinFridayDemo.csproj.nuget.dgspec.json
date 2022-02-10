@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JoanitaNell\\Desktop\\GradCoinFridayDemo\\GradCoinFridayDemo.csproj": {}
+    "C:\\Users\\JoanitaNell\\Desktop\\Jacques-and-Friends\\GradCoinFridayDemo\\GradCoinFridayDemo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JoanitaNell\\Desktop\\GradCoinFridayDemo\\GradCoinFridayDemo.csproj": {
+    "C:\\Users\\JoanitaNell\\Desktop\\Jacques-and-Friends\\GradCoinFridayDemo\\GradCoinFridayDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JoanitaNell\\Desktop\\GradCoinFridayDemo\\GradCoinFridayDemo.csproj",
+        "projectUniqueName": "C:\\Users\\JoanitaNell\\Desktop\\Jacques-and-Friends\\GradCoinFridayDemo\\GradCoinFridayDemo.csproj",
         "projectName": "GradCoinFridayDemo",
-        "projectPath": "C:\\Users\\JoanitaNell\\Desktop\\GradCoinFridayDemo\\GradCoinFridayDemo.csproj",
+        "projectPath": "C:\\Users\\JoanitaNell\\Desktop\\Jacques-and-Friends\\GradCoinFridayDemo\\GradCoinFridayDemo.csproj",
         "packagesPath": "C:\\Users\\JoanitaNell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JoanitaNell\\Desktop\\GradCoinFridayDemo\\obj\\",
+        "outputPath": "C:\\Users\\JoanitaNell\\Desktop\\Jacques-and-Friends\\GradCoinFridayDemo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\JoanitaNell\\AppData\\Roaming\\NuGet\\NuGet.Config",

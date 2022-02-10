@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yx2tEbndgNKlkygf8Vr1i0PBo1wxNaMrX5PLLPq0dtq7il/9k5kqgFCBSgenankxUtkSxb6u6CB32W6SavWf/w==",
+  "dgSpecHash": "0k3k/0zfgDU//KDPv/m2QhCSe2c0rWf9bIX2jFDU0TOprRlgYOBdeIkoNFABPm5oNg3sw9wQqJPLPWGCvyBkzA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\JoanitaNell\\Desktop\\GradCoinFridayDemo\\GradCoinFridayDemo.csproj",
+  "projectFilePath": "C:\\Users\\JoanitaNell\\Desktop\\Jacques-and-Friends\\GradCoinFridayDemo\\GradCoinFridayDemo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JoanitaNell\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\JoanitaNell\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
