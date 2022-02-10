@@ -27,11 +27,27 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 
+
 app.MapPost("/wallet/transfer", async (TransferDto transerDto, GradCoinFridayDemoDbContext _dbContext) =>
 {
-   
+
 })
 .WithName("TranserCoin");
+
+app.MapGet("/wallet/{id}", async(Guid id, GradCoinFridayDemoDbContext _dbContext) =>
+{
+    var ReturnWallet = await _dbContext.wallets.Where(x => x.WalletID == id).FirstOrDefaultAsync();
+    return ReturnWallet;    
+
+   
+})
+.WithName("GetWalletByID");
+
+app.MapGet("/ledger", async (GradCoinFridayDemoDbContext _dbContext) =>
+{
+    var ledgerEntries = await _dbContext.ledgers.ToListAsync();
+    return ledgerEntries;
+}).WithName("GetLedger");
 
 app.Run();
 
