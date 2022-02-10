@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradCoinFridayDemo", "GradCoinFridayDemo.csproj", "{EF2C4138-AA1D-4A84-A8C0-FD327F7C88AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF2C4138-AA1D-4A84-A8C0-FD327F7C88AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF2C4138-AA1D-4A84-A8C0-FD327F7C88AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF2C4138-AA1D-4A84-A8C0-FD327F7C88AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF2C4138-AA1D-4A84-A8C0-FD327F7C88AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4DD3C5F6-8BAC-4035-AE54-5A8DC3EC2EB6}
+	EndGlobalSection
+EndGlobal
